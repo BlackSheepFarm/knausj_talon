@@ -1,5 +1,6 @@
 code.language: talon
 -
+dot talon: insert(".talon")
 insert: 
 	insert('insert("")')
 	edit.left()
