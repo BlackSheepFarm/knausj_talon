@@ -65,6 +65,10 @@ class Actions:
         """Hides list of running applications"""
         gui.hide()
 
+    def window_select():
+        """Selector for next and last window"""
+
+
 @imgui.open()
 def gui(gui: imgui.GUI):
     gui.text("Names of running applications")
