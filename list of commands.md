@@ -5,6 +5,7 @@
 new window  
 next window   
 last window  
+select window (Windows only)
 close window   
 
 ### Working with applications  
