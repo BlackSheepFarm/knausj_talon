@@ -1,6 +1,11 @@
-# see app/vscode_generic.talon for linux and windows action implementation 
 
+os: linux
 app: Code
+
+os: mac
+app: Code
+
+os: windows
 app: Visual Studio Code
 app: Code.exe
 -
