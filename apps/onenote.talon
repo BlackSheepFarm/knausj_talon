@@ -11,7 +11,7 @@ create table:
     key(tab)
 
 # pages
-new page at end:
+(new page [at end]):
     key(ctrl-n)
 
 new page below this:
