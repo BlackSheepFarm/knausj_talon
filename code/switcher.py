@@ -66,7 +66,10 @@ class Actions:
         gui.hide()
 
     def window_select():
-        """Selector for next and last window"""
+        """Selector for next and previous window"""
+
+    def window_last():
+        """Selector last window"""
 
 
 @imgui.open()
