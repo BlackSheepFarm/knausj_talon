@@ -2,6 +2,11 @@
 app: ONENOTE.EXE
 -
 
+# navigate
+search:
+    key(ctrl-e)
+
+
 # tables
 create table:
     key(space)
@@ -39,7 +44,7 @@ focus sections:
     key(ctrl-shift-g)
 
 focus pages:
-    key(ctrl-altg-g)
+    key(ctrl-alt-g)
 
 show notebooks:
     key(ctrl-g)
