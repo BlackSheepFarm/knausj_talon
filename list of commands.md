@@ -7,6 +7,13 @@ next window
 last window  
 select window (Windows only)
 close window   
+switch window
+maximize window
+minimize window
+snap window left (Windows only)
+snap window right (Windows only)
+move window left (Windows only)
+move window right (Windows only)
 
 ### Working with applications  
 focus "app name"     (say "focus chrome" for example, to switch active window to chrome)  
@@ -39,7 +46,9 @@ cut that
 paste it (the default is "paste match" but I've modified to "paste it" in misc/standard.talon)  
 
 ### Working with the mouse and scrolling 
-dubclick (to double left click)  
+chiff (single lift click)
+dubclick | duke (to double left click)  
+tripclick | triplick2 (to triple lift click)
 righty (to right click)  
 (page | scroll) up  
 (page | scroll) [down]   
