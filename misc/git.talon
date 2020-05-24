@@ -3,6 +3,7 @@ app: cmd.exe
 app: iTerm2
 app: Terminal
 app: Windows Command Processor
+app: pwsh.exe
 app: Code
 app: Visual Studio Code
 app: Code.exe
