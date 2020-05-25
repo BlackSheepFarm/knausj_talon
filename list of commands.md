@@ -1,5 +1,10 @@
 ## List of common commands to get started with Talon  
 
+
+### Help
+help alphabet
+help active
+
 ### Open and switch between windows in apps such as Chrome (these are controlled in misc/window_management.talon)  
 
 new window  
