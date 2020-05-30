@@ -5,11 +5,19 @@ import time
 import os
 import platform
 
+cwd = os.path.dirname(os.path.realpath(__file__))
+overrides_file = os.path.join(cwd, "app_name_overrides.csv")
+overrides ={}
+with open(overrides_file, "r") as f:
+    for line in f:
+        line = line.rstrip()
+        line = line.split(",")
+        overrides[line[0].lower()] = line[1].strip()
+
+print(f'knausj_talon.switcher------------ app name overrides:{overrides}')
+
 app_cache = {}
-overrides = {
-    'grip': 'DataGrip', 
-    'term': 'iTerm2'
-}
+
 
 mod = Module()
 mod.list('running', desc='all running applications')
@@ -47,9 +55,8 @@ class Actions:
     def switcher_focus(name: str):
         """Focus a new application by  name"""
         for app in ui.apps():
-            #print("app.name:" + app.name)
-            #print("app.bundler: " + app.bundle)
-            if app.name == name and not app.background:
+            # print(f"--------- app.name:{app.name}  app.bundler:{app.bundle}")
+            if name in app.name and not app.background:
                 app.focus()
                 break
 
@@ -108,8 +115,8 @@ def update_lists():
             if word and not word in new:
                 new[word.lower()] = cur_app.name
         new[name.lower()] = cur_app.name
-    for override in overrides:
-        new[override] = overrides[override] 
+    for line in overrides:
+        new[line] = overrides[line] 
     ctx.lists['self.running'] = new
     
     #print(str(new))
@@ -132,6 +139,7 @@ def update_lists():
 
 def ui_event(event, arg):
     if event in ('app_activate', 'app_launch', 'app_close', 'win_open', 'win_close'):
+        # print(f'------------------ event:{event}  arg:{arg}')
         update_lists()
 
 ui.register('', ui_event)
