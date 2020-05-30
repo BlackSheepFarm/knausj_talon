@@ -10,6 +10,14 @@ app: Code.exe
 action(user.ide_command_palette):
   key(ctrl-shift-p)
 
+action(app.tab_next):
+  key(ctrl-k)
+  key(ctrl-pagedown)
+  
+action(app.tab_previous):
+  key(ctrl-k)
+  key(ctrl-pageup)
+  
 # Splits
 action(user.ide_split_right):
   key(ctrl-shift-p)
