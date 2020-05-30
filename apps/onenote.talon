@@ -6,6 +6,9 @@ app: ONENOTE.EXE
 search:
     key(ctrl-e)
 
+# edit
+highlight this:
+    key(ctrl-alt-h)
 
 # tables
 create table:
