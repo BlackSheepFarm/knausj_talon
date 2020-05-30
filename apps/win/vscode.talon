@@ -120,3 +120,6 @@ action(user.ide_show_extensions):
 
 action(user.ide_window_new):
   key(ctrl-shift-n)
+
+action(user.ide_create_file):
+  key(ctrl-n)
