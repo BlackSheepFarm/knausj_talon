@@ -65,13 +65,19 @@ action(user.ide_terminal_new):
   key(ctrl-shift-`)
 
 action(user.ide_terminal_focus_previous):
-  key(alt-left)
+  user.ide_command_palette()
+  insert("Terminal:Focus Previous Terminal")
+  key(enter)
 
 action(user.ide_terminal_focus_next):
-  key(alt-right)
+  user.ide_command_palette()
+  insert("Terminal:Focus Next Terminal")
+  key(enter)
 
 action(user.ide_terminal_trash):
-  key(ctrl-shift-delete)
+  user.ide_command_palette()
+  insert("Terminal:Kill")
+  key(enter)
 
 action(user.ide_terminal_scroll_down):
   key(shift-pgdown)
