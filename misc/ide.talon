@@ -6,6 +6,8 @@ app: PyCharm64.exe
 app: Visual Studio Code
 app: Code
 app: Code.exe
+app: Atom
+app: atom.exe
 
 # When tags are supported
 #tags: ide
@@ -109,6 +111,7 @@ git (view | show | list) (requests | request): user.ide_git_list_requests()
 git (annotate | blame): user.ide_git_annotate()
 git menu: user.ide_git_menu()
 # Tool windows:
+command palette: user.ide_command_palette()
 # Toggling various tool windows
 toggle explorer: user.ide_toggle_explorer()
 toggle project: user.ide_toggle_project()
@@ -150,6 +153,8 @@ toggle parameters: user.ide_toggle_parameters()
 toggle fullscreen: user.ide_toggle_fullscreen()
 toggle distraction [free mode]: user.ide_toggle_distraction_free()
 toggle presentation [mode]: user.ide_toggle_presentation_mode()
+# Toggle additionals
+toggle comment: user.ide_toggle_comment()
 # Tabs
 go first tab: user.ide_go_first_tab()
 go second tab: user.ide_go_second_tab()
