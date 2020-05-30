@@ -110,6 +110,16 @@ git (pull request | request): user.ide_git_pull_request()
 git (view | show | list) (requests | request): user.ide_git_list_requests()
 git (annotate | blame): user.ide_git_annotate()
 git menu: user.ide_git_menu()
+
+# Terminal
+new terminal: user.ide_terminal_new()
+next terminal: user.ide_terminal_focus_next()
+trash terminal: user.ide_terminal_trash()
+(previous | last) terminal: user.ide_terminal_focus_previous()
+terminal scroll up: user.ide_terminal_scroll_up()
+terminal scroll down: user.ide_terminal_scroll_down()
+
+
 # Tool windows:
 command palette: user.ide_command_palette()
 # Toggling various tool windows
