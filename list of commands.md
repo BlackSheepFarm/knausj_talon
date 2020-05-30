@@ -1,17 +1,21 @@
 ## List of common commands to get started with Talon  
 
 
-### Help
+### Talon Help
 help alphabet
 help active
+
+### Talon State Display
+show command history
+hide command history
 
 ### Open and switch between windows in apps such as Chrome (these are controlled in misc/window_management.talon)  
 
 new window  
-next window   
+next window
 last window  
 select window (Windows only)
-close window   
+close window
 switch window
 maximize window
 minimize window
@@ -33,6 +37,25 @@ close tab
 reopen tab  
 (page | scroll) up  
 (page | scroll) [down]   
+
+
+### Formatters
+dunder -- "DOUBLE_UNDERSCORE"
+camel -- "PRIVATE_CAMEL_CASE"
+hammer -- "PUBLIC_CAMEL_CASE"
+snake -- "SNAKE_CASE"
+smash -- "NO_SPACES"
+kebab -- "DASH_SEPARATED"
+packed -- "DOUBLE_COLON_SEPARATED"
+allcaps -- "ALL_CAPS"
+alldown -- "ALL_LOWERCASE"
+dubstring -- "DOUBLE_QUOTED_STRING"
+string -- "SINGLE_QUOTED_STRING"
+padded -- "SPACE_SURROUNDED_STRING"
+dotted -- "DOT_SEPARATED"
+slasher -- "SLASH_SEPARATED"
+sentence -- "CAPITALIZE_FIRST_WORD"
+title -- "CAPITALIZE_ALL_WORDS"
 
 ### Working with media  
 mute  
@@ -72,3 +95,18 @@ wheel tiny right
 curse yes (shows cursor)  
 curse no (hides cursor)  
 drag  
+
+### VSCODE
+
+#### General
+command pallet
+new instance
+
+#### Basic editing
+
+#### Navigation
+
+#### Search and replace
+find it
+
+#### File management
