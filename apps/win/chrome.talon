@@ -31,6 +31,11 @@ action(browser.go):
 	insert(url)
 	key(enter)
 
+# action(browser.duplicate_tab):
+# 	key(alt-d)
+# 	sleep(100ms)
+# 	key(alt-enter)
+
 action(browser.go_blank):
 	key(ctrl-n)
 	
