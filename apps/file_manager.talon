@@ -16,7 +16,7 @@ app: /terminal/
 -
 settings():
     # enable if you'd like the picker gui to automatically appear when explorer has focus
-    user.file_manager_auto_show_pickers = 0
+    user.file_manager_auto_show_pickers = 1
 
 force title: user.file_manager_refresh_title()
 show options: user.file_manager_show_pickers()
@@ -32,10 +32,10 @@ go back: user.file_manager_go_back()
 go forward: user.file_manager_go_forward()
 daddy: user.file_manager_open_parent()
 
-^follow <user.file_manager_directory_index>$: user.file_manager_open_directory(user.file_manager_directory_index)
-^open <user.file_manager_file_index>$: user.file_manager_open_file(user.file_manager_file_index)
-^(cell | sell | select) folder <user.file_manager_directory_index>$: user.file_manager_select_directory(user.file_manager_directory_index)
-^(cell | sell | select) file <user.file_manager_file_index>$: user.file_manager_select_file(user.file_manager_file_index)
+^follow <number>$: user.file_manager_open_directory(number - 1)
+^open <number>$: user.file_manager_open_file(number - 1)
+^(cell | sell | select) folder <number>$: user.file_manager_select_directory(number - 1)
+^(cell | sell | select) file <number>$: user.file_manager_select_file(number - 1)
 
 next folders: user.file_manager_next_folder_page()
 previous folders: user.file_manager_previous_folder_page()
