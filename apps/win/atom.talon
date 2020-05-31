@@ -23,10 +23,12 @@ action(user.ide_split_left):
   key(left)
 
 action(user.ide_split_up):
-  key(ctrl-k-up)
+  key(ctrl-k)
+  key(up)
 
 action(user.ide_split_down):
-  key(ctrl-k-down)
+  key(ctrl-k)
+  key(down)
 
 # action(user.ide_refactor):
 #   key(ctrl-a)
@@ -99,7 +101,7 @@ action(user.ide_toggle_explorer):
 #   key(ctrl-shift-f)
 action(user.ide_toggle_find):
    key(ctrl-shift-f)
- action(user.ide_find_everywhere):
+action(user.ide_find_everywhere):
    key(ctrl-shift-f)
 
 # action(user.ide_show_source_control):
