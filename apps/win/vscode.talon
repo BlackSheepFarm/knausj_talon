@@ -10,6 +10,7 @@ app: Code.exe
 action(user.ide_command_palette):
   key(ctrl-shift-p)
 
+# Editior Navigation
 action(app.tab_next):
   key(ctrl-k)
   key(ctrl-pagedown)
@@ -18,24 +19,24 @@ action(app.tab_previous):
   key(ctrl-k)
   key(ctrl-pageup)
   
-# Splits
+# Editor Splits
 action(user.ide_split_right):
-  key(ctrl-shift-p)
+  user.ide_command_palette()
   insert("workbench.action.splitEditorRight")
   key(enter)
 
 action(user.ide_split_left):
-  key(ctrl-shift-p)
+  user.ide_command_palette()
   insert("workbench.action.splitEditorLeft")
   key(enter)
 
 action(user.ide_split_up):
-  key(ctrl-shift-p)
+  user.ide_command_palette()
   insert("workbench.action.splitEditorUp")
   key(enter)
 
 action(user.ide_split_down):
-  key(ctrl-shift-p)
+  user.ide_command_palette()
   insert("workbench.action.splitEditorDown")
   key(enter)
 
