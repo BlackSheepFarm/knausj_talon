@@ -5,6 +5,38 @@ os: linux
 app: Code
 -
 
+# General
+action(user.ide_command_palette):
+  key(ctrl-shift-p)
+
+# Editior Navigation
+action(app.tab_next):
+  key(ctrl-pagedown)
+  
+action(app.tab_previous):
+  key(ctrl-pageup)
+
+# Editor Splits
+action(user.ide_split_right):
+  user.ide_command_palette()
+  insert("View:Split Editor Right")
+  key(enter)
+
+action(user.ide_split_left):
+  user.ide_command_palette()
+  insert("View:Split Editor Left")
+  key(enter)
+
+action(user.ide_split_up):
+  user.ide_command_palette()
+  insert("View:Split Editor Up")
+  key(enter)
+
+action(user.ide_split_down):
+  user.ide_command_palette()
+  insert("View:Split Editor Down")
+  key(enter)
+
 action(user.ide_refactor):
   key(ctrl-a)
   key(ctrl-shift-i)
@@ -95,5 +127,5 @@ action(user.ide_show_extensions):
 action(user.ide_window_new):
   key(ctrl-shift-n)
 
-action(user.ide_create_file)
+action(user.ide_create_file):
   key(ctrl-n)
