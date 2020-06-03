@@ -1,3 +1,9 @@
+# app: cmd.exe	
+# app: Windows Command Processor	
+# app: Code	
+# app: Visual Studio Code	
+# app: Code.exe
+
 tag: terminal
 -
 
