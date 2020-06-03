@@ -4,6 +4,7 @@ app: IntelliJ IDEA
 app: PyCharm
 app: PyCharm64.exe
 app: Visual Studio Code
+app: Code - OSS
 app: Code
 app: Code.exe
 app: Atom
@@ -122,12 +123,15 @@ terminal scroll down: user.ide_terminal_scroll_down()
 
 # Tool windows:
 command palette: user.ide_command_palette()
+reveal in manager: user.ide_reveal_in_file_manager()
+
 # Toggling various tool windows
 toggle explorer: user.ide_toggle_explorer()
 toggle project: user.ide_toggle_project()
 toggle find: user.ide_toggle_find()
 toggle run: user.ide_toggle_run()
 toggle debug: user.ide_toggle_debug()
+toggle extensions: user.ide_toggle_extensions()
 toggle events: user.ide_toggle_events()
 toggle terminal: user.ide_toggle_terminal()
 toggle git: user.ide_toggle_git()

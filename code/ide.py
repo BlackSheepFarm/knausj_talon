@@ -275,8 +275,8 @@ class Actions:
     def ide_git_menu():
         """Show the git menu for IDE"""
 
-    def ide_toggle_explorer():
-        """Hide/Show explorer (file system) browser window"""
+    def ide_reveal_in_file_manager():
+        """Reveal in OS file manager. window"""
 
     def ide_toggle_project():
         """Hide/Show project (file system) browser window"""
@@ -295,6 +295,9 @@ class Actions:
 
     def ide_toggle_terminal():
         """Hide/Show terminal window"""
+
+    def ide_toggle_extensions():
+        """Hide/Show extensions window"""
 
     def ide_terminal_new():
         """Create new terminal"""
@@ -497,20 +500,5 @@ class Actions:
     def ide_toggle_comment():
         """Toggle comment for selected text"""
 
-    def ide_show_explorer():
-        """Show Explorer"""
 
-    def ide_show_search():
-        """Show Search"""
 
-    def ide_show_source_control():
-        """Show Source Control"""
-
-    def ide_show_debug():
-        """Show Debug"""
-
-    def ide_show_extensions():
-        """Show Extensions"""
-
-    def ide_window_new():
-        """Launch new window"""
