@@ -107,13 +107,7 @@ action(user.ide_done):
 
 action(user.ide_toggle_project):
   key(ctrl-shift-e)
-action(user.ide_toggle_explorer):
-  key(ctrl-shift-e)
 
-action(user.ide_toggle_find):
-  key(ctrl-shift-f)
-action(user.ide_find_everywhere):
-  key(ctrl-shift-f)
 action(user.ide_toggle_find):
   key(ctrl-shift-f)
 action(user.ide_find_everywhere):
@@ -121,13 +115,7 @@ action(user.ide_find_everywhere):
 
 action(user.ide_toggle_git):
   key(ctrl-shift-g)
-action(user.ide_toggle_git):
-  key(ctrl-shift-g)
 
-action(user.ide_toggle_run):
-  key(ctrl-shift-d)
-action(user.ide_toggle_debug):
-  key(ctrl-shift-d)
 action(user.ide_toggle_run):
   key(ctrl-shift-d)
 action(user.ide_toggle_debug):
