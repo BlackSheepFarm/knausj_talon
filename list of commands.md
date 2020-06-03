@@ -4,6 +4,7 @@
 ### Talon Help
 help alphabet
 help active
+help search
 
 ### Talon State Display
 show command history
@@ -38,6 +39,15 @@ reopen tab
 (page | scroll) up  
 (page | scroll) [down]   
 
+### Modes
+dictation mode
+command mode
+force see sharp
+force see plus plus
+force python
+force go language
+force (talon | talent) language
+clear language modes
 
 ### Formatters
 dunder -- "DOUBLE_UNDERSCORE"
