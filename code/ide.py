@@ -12,7 +12,7 @@ class Actions:
         """Trigger better auto complete in the ide"""
 
     def ide_smart():
-        """Trigger type completion in the ide"""
+        """Trigger suggestion / type completion in the ide"""
 
     def ide_finish():
         """Select auto complete statement"""
@@ -20,7 +20,7 @@ class Actions:
     def ide_done():
         """Select auto complete statement"""
 
-    def ide_parameter_hints():
+    def ide_intellisense_suggest_parameters():
         """Trigger parameter hints"""
 
     def ide_toggle_tools():
@@ -161,11 +161,17 @@ class Actions:
     def ide_expand_all():
         """Expand all blocks in file"""
 
+    def ide_expand_region():
+        """Expand current block in file"""
+
     def ide_collapse_deep():
         """Collapse code recursively"""
 
     def ide_collapse_all():
         """Collapse all code in file"""
+
+    def ide_collapse_region():
+        """Collapse current block in file"""
 
     def ide_split_right():
         """Copy current tab to the right pane"""
@@ -475,6 +481,8 @@ class Actions:
 
     def ide_step_into():
         """Step into current statement"""
+    def ide_step_out():
+        """Step out of current execution level"""
 
     def ide_step_smart():
         """Trigger smart step into"""

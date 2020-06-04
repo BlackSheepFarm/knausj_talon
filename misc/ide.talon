@@ -15,6 +15,9 @@ app: atom.exe
 -
 refactor: user.ide_refactor()
 
+
+#Intellisense, Rich language support
+suggest (parameters | (args | arguments)): user.ide_intellisense_suggest_parameters()
 complete: code.complete()
 perfect: user.ide_perfect()
 smart: user.ide_smart()
@@ -65,8 +68,10 @@ go last mark: user.ide_go_last_mark()
 # Folding
 expand deep: user.ide_expand_deep()
 expand all: user.ide_expand_all()
+expand this: user.ide_expand_region()
 collapse deep: user.ide_collapse_deep()
 collapse all: user.ide_collapse_all()
+collapse this: user.ide_collapse_region()
 # Splits
 split right: user.ide_split_right()
 split left: user.ide_split_left()
@@ -126,7 +131,6 @@ command palette: user.ide_command_palette()
 reveal in manager: user.ide_reveal_in_file_manager()
 
 # Toggling various tool windows
-toggle explorer: user.ide_toggle_explorer()
 toggle project: user.ide_toggle_project()
 toggle find: user.ide_toggle_find()
 toggle run: user.ide_toggle_run()
@@ -163,6 +167,7 @@ toggle bread crumbs: user.ide_toggle_breadcrumbs()
 toggle gutter icons: user.ide_toggle_gutter_icons()
 toggle wrap: user.ide_toggle_wrap()
 toggle parameters: user.ide_toggle_parameters()
+
 # Toggleable views
 toggle fullscreen: user.ide_toggle_fullscreen()
 toggle distraction [free mode]: user.ide_toggle_distraction_free()
@@ -196,6 +201,7 @@ run test again: user.ide_run_test_again()
 debug test: user.ide_debug_test()
 step over: user.ide_step_over()
 step into: user.ide_step_into()
+step out: user.ide_step_out()
 step smart: user.ide_step_smart()
 step to line: user.ide_step_to_line()
 continue: user.ide_continue()
