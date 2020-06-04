@@ -21,8 +21,10 @@ insert:
 key:
 	insert('key()')
 	edit.left()
+control key:
+	insert('ctrl')
 action:
-	insert("action()")
+	insert("action():")
 	edit.left()
 os win:
 	insert("os: windows")
