@@ -10,7 +10,7 @@ app: Code.exe
 app: Atom
 app: atom.exe
 
-# When tags are supported
+# TODO When tags are supported
 #tags: ide
 -
 refactor: user.ide_refactor()
@@ -49,6 +49,15 @@ find (everywhere | all): user.ide_find_everywhere()
 (search | find) class: user.ide_find_class()
 (search | find) file: user.ide_find_file()
 (search | find) path: user.ide_find_in_path()
+
+replace it: user.ide_replace_local()
+replace (everywhere | all): user.ide_replace_everywhere()
+[replace] confirm that: user.ide_replace_confirm_current()
+[replace] confirm all: user.ide_replace_confirm_all()
+toggle [find by] case : user.ide_find_match_by_case()
+toggle [find by] word : user.ide_find_match_by_word()
+toggle [find by] expression : user.ide_find_match_by_regex()
+
 recent: user.ide_recent()
 
 create (template|snippet): user.ide_create_template()
@@ -68,10 +77,10 @@ go last mark: user.ide_go_last_mark()
 # Folding
 expand deep: user.ide_expand_deep()
 expand all: user.ide_expand_all()
-expand this: user.ide_expand_region()
+expand that: user.ide_expand_region()
 collapse deep: user.ide_collapse_deep()
 collapse all: user.ide_collapse_all()
-collapse this: user.ide_collapse_region()
+collapse that: user.ide_collapse_region()
 # Splits
 split right: user.ide_split_right()
 split left: user.ide_split_left()
