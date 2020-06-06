@@ -22,7 +22,7 @@ def on_phrase(j):
             gui.freeze()
    
 #todo: dynamic rect?
-@imgui.open(y=0, x=1000)
+@imgui.open(y=0, x=1000, software=False)
 def gui(gui: imgui.GUI):
     global history
     gui.text("Command History")

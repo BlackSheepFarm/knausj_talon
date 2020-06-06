@@ -3,7 +3,6 @@ from talon.voice import Capture
 import re
 import time
 import os
-import platform
 
 cwd = os.path.dirname(os.path.realpath(__file__))
 overrides_file = os.path.join(cwd, "app_name_overrides.csv")
@@ -97,7 +96,7 @@ class Actions:
         """Move window to the right screen"""
 
 
-@imgui.open()
+@imgui.open(software=False)
 def gui(gui: imgui.GUI):
     gui.text("Names of running applications")
     gui.line()
