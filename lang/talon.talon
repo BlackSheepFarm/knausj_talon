@@ -14,14 +14,25 @@ action(user.code_operator_assignment): " = "
 action(user.code_comment): "#"
 
 insert: 
-	insert('insert("")')
+	insert("insert('')")
 	edit.left()
 	edit.left()
 key:
 	insert('key()')
 	edit.left()
+control key:
+	insert('ctrl')
+super key:
+	insert('super')
+command key:
+	insert('cmd')
+alt key:
+	insert('alt')
+shift key:
+	insert('shift')
+
 action:
-	insert("action()")
+	insert("action():")
 	edit.left()
 os win:
 	insert("os: windows")
