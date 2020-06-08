@@ -10,6 +10,7 @@ app: Safari
 app: Code
 app: Visual Studio Code
 app: Code.exe
+app: atom.exe
 app: /terminal/
 app: /jetbrains/
 -

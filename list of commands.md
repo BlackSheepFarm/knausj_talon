@@ -1,0 +1,122 @@
+## List of common commands to get started with Talon  
+
+
+### Talon Help
+help alphabet
+help active
+help search
+
+### Talon State Display
+show command history
+hide command history
+
+### Open and switch between windows in apps such as Chrome (these are controlled in misc/window_management.talon)  
+
+new window  
+next window
+last window  
+select window (Windows only)
+close window
+switch window
+maximize window
+minimize window
+snap window left (Windows only)
+snap window right (Windows only)
+move window left (Windows only)
+move window right (Windows only)
+
+### Working with applications  
+focus "app name"     (say "focus chrome" for example, to switch active window to chrome)  
+list running    (say "list running" to see all active applications)  
+hide running    (say "hide running" to close the list of active applications)  
+(open | new)  
+
+### Working with tabs (these are controlled in misc/tabs.talon)  
+last tab  
+next tab  
+close tab   
+reopen tab  
+(page | scroll) up  
+(page | scroll) [down]   
+
+### Modes
+dictation mode
+command mode
+force see sharp
+force see plus plus
+force python
+force go language
+force (talon | talent) language
+clear language modes
+
+### Formatters
+dunder -- "DOUBLE_UNDERSCORE"
+camel -- "PRIVATE_CAMEL_CASE"
+hammer -- "PUBLIC_CAMEL_CASE"
+snake -- "SNAKE_CASE"
+smash -- "NO_SPACES"
+kebab -- "DASH_SEPARATED"
+packed -- "DOUBLE_COLON_SEPARATED"
+allcaps -- "ALL_CAPS"
+alldown -- "ALL_LOWERCASE"
+dubstring -- "DOUBLE_QUOTED_STRING"
+string -- "SINGLE_QUOTED_STRING"
+padded -- "SPACE_SURROUNDED_STRING"
+dotted -- "DOT_SEPARATED"
+slasher -- "SLASH_SEPARATED"
+sentence -- "CAPITALIZE_FIRST_WORD"
+title -- "CAPITALIZE_ALL_WORDS"
+
+### Working with media  
+mute  
+play next   
+play previous   
+(play | pause)  
+
+### Working with the Tobii eye tracker (works with Talon beta only)  
+control mouse (say "control mouse" to toggle on/off Tobii moving the mouse)  
+run calibration (say "run calibration" to start Tobii calibration)  
+
+### Working with text  
+copy that  
+cut that  
+~paste that~ (the default is "paste that" but I've commented out the command in misc/standard.talon)  
+paste it (the default is "paste match" but I've modified to "paste it" in misc/standard.talon)  
+
+### Working with the mouse and scrolling 
+chiff (single lift click)
+dubclick | duke (to double left click)  
+tripclick | triplick2 (to triple lift click)
+righty (to right click)  
+(page | scroll) up  
+(page | scroll) [down]   
+wheel down  
+wheel tiny [down]  
+wheel downer  
+wheel up  
+wheel tiny up   
+wheel upper  
+wheel gaze (for scrolling down) (this seems like it would use the Tobii eye tracker but it does not)  
+wheel stop  
+wheel left  
+wheel tiny left   
+wheel right  
+wheel tiny right  
+curse yes (shows cursor)  
+curse no (hides cursor)  
+drag  
+
+### VSCODE
+
+#### General
+command pallet
+new instance
+
+#### Basic editing
+
+#### Navigation
+
+#### Search and replace
+find it
+
+#### File management

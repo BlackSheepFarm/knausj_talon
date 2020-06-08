@@ -18,6 +18,17 @@ with open(overrides_file, "r") as f:
 
 print(f'knausj_talon.switcher------------ app name overrides:{overrides}')
 
+cwd = os.path.dirname(os.path.realpath(__file__))
+overrides_file = os.path.join(cwd, "app_name_overrides.csv")
+overrides ={}
+with open(overrides_file, "r") as f:
+    for line in f:
+        line = line.rstrip()
+        line = line.split(",")
+        overrides[line[0].lower()] = line[1].strip()
+
+print(f'knausj_talon.switcher------------ app name overrides:{overrides}')
+
 app_cache = {}
 
 

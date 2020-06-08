@@ -2,6 +2,7 @@ mode: user.talon
 mode: command 
 and code.language: talon
 -
+dot talon: insert(".talon")
 tag(): user.code_operators
 tag(): user.code_comment
 action(user.code_operator_and): " and "

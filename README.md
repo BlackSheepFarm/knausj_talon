@@ -13,6 +13,8 @@ git clone git@github.com:knausj85/knausj_talon.git knausj_talon
     
 Alternatively, access the directory by right clicking the Talon icon in taskbar, clicking Scripting>Open ~/talon, and navigating to user.
 
+On windows wherever the linux path `~/.talon` is displayed substitute it with the default windows home user directory which is `C:\Users\%username%\AppData\Roaming\talon`
+
 The folder structure should look like:
 
 ```insert code:
