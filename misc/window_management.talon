@@ -1,3 +1,10 @@
+os: linux
+#os: windows
+-
+
+maximize window: user.window_maximize()
+minimize window: user.window_minimize()
+
 new window: app.window_open()
 next window: app.window_next()
 last window: app.window_previous()

@@ -1,6 +1,6 @@
 os: windows
-os: linux
 -
+
 #app.preferences()
 
 action(app.tab_close):
@@ -27,16 +27,44 @@ action(app.window_close):
 action(app.window_hide):
 	key(alt-space n)
 	
+action(app.window_next): 
+	key(alt:down)
+	key(tab)
+
+action(app.window_previous): 
+	key(alt:down)
+	key(shift-tab)
+
+action(user.window_last):
+	key(alt-tab)
+
+action(user.window_select):
+	key(enter)
+	key(alt:up)
+
 action(app.window_hide_others):
 	key(win-d alt-tab)
 	
-#requires easy window switcher or equivalent (built into most Linux)
-action(app.window_next): 
-	key(alt-`)
 
 action(app.window_open):
 	key(ctrl-n)
 
-#requires easy window switcher or equivalent (built into most Linux)
-action(app.window_previous): 
-	key(alt-shift-`)
+action(user.window_maximize):
+	key(super-up)
+
+action(user.window_minimize):
+	key(super-down)
+
+action(user.window_move_left_screen):
+	key(super-shift-left)
+
+action(user.window_move_right_screen):
+	key(super-shift-right)
+
+action(user.window_snap_left):
+	key(super-left)
+
+action(user.window_snap_right):
+	key(super-right)
+
+	
